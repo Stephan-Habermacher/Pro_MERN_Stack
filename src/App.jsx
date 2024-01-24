@@ -21,8 +21,9 @@ function IssueRow(props) {
 
 function IssueTable(props) {
   const issueRows = props.issues.map((issue) => (
-    <Issue key={issue.id} issue={issue} />
+    <IssueRow key={issue.id} issue={issue} />
   ));
+
   return (
     <table className="bordered-table">
       <thead>
